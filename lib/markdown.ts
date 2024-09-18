@@ -100,7 +100,7 @@ function sluggify(text: string) {
 }
 
 function getDocsContentPath(slug: string) {
-  return path.join(process.cwd(), "/contents/docs/", `${slug}/index.mdx`);
+  return path.join(process.cwd(), "/contents/ai-tools/", `${slug}/index.mdx`);
 }
 
 // for copying the code
