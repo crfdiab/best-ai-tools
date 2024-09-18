@@ -18,6 +18,9 @@ export async function generateMetadata({ params: { slug } }: PageProps) {
   return {
     title: frontmatter.title,
     description: frontmatter.description,
+    alternates: {
+      canonical: `https://best-ai-tools-chi.vercel.app/blog/${slug}`,
+    },
   };
 }
 
