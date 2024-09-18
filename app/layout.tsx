@@ -6,11 +6,19 @@ import { GeistMono } from "geist/font/mono";
 import { Footer } from "@/components/footer";
 import "./globals.css";
 
+const BASE_URL = "https://best-ai-tools-chi.vercel.app";
+
+function generateCanonicalUrl(path: string): string {
+  return `${BASE_URL}${path}`;
+}
 export const metadata: Metadata = {
   title: "AriaDocs - Template",
-  metadataBase: new URL("https://ariadocs.vercel.app/"),
+  metadataBase: new URL(BASE_URL),
   description:
     "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements.",
+    alternates: {
+      canonical: generateCanonicalUrl("/"),
+    },
 };
 
 export default function RootLayout({
