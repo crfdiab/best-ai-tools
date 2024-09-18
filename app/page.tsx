@@ -15,7 +15,7 @@ export default function Home() {
         <MoveUpRightIcon className="w-4 h-4 font-extrabold" />
       </Link>
       <h1 className="text-3xl font-bold mb-4 sm:text-7xl">
-        An example app built using Next.js and server components.
+        The AI Curator
       </h1>
       <p className="mb-8 sm:text-xl max-w-[800px] text-muted-foreground">
         This feature-packed documentation template, built with Next.js, offers a
