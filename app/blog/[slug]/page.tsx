@@ -45,6 +45,13 @@ export default async function BlogPage({ params: { slug } }: PageProps) {
         <ArrowLeftIcon className="w-4 h-4 mr-1.5" /> Back to blog
       </Link>
       <div className="flex flex-col gap-3 pb-7 w-full border-b mb-4">
+        {res.frontmatter.featuredImage && (
+          <img
+            src={res.frontmatter.featuredImage}
+            alt={res.frontmatter.title}
+            className="w-full h-auto mb-4 rounded-lg"
+          />
+        )}
         <p className="text-muted-foreground text-sm">
           {formatDate(res.frontmatter.date)}
         </p>

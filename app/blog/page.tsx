@@ -41,9 +41,17 @@ function BlogCard({
   title,
   description,
   slug,
+  featuredImage,
 }: BlogMdxFrontmatter & { slug: string }) {
   return (
     <div className="flex flex-col gap-2 items-start border rounded-md p-5 pt-7">
+      {featuredImage && (
+        <img
+          src={featuredImage}
+          alt={title}
+          className="w-full h-48 object-cover mb-2 rounded-md"
+        />
+      )}
       <Link
         href={`/blog/${slug}`}
         className="sm:text-lg text-lg font-semibold -mt-1"
