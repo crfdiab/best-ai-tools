@@ -165,3 +165,6 @@ pre>code {
 .highlight-comp>code {
   background-color: transparent !important;
 }
+body {
+  font-family: "Lexend Variable", sans-serif;
+}
