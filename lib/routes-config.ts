@@ -49,6 +49,9 @@ export const ROUTES: EachRoute[] = [
     ],
   },
   {
+    title: "AI Tools", href: "/", noLink: undefined,
+  },
+  {
     title: "Server Actions",
     href: "/server-actions",
     noLink: true,
