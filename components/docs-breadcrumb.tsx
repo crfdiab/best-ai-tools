@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -14,20 +15,20 @@ export default function DocsBreadcrumb({ paths }: { paths: string[] }) {
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink>Docs</BreadcrumbLink>
+            <Link href="/ai-tools" passHref legacyBehavior>
+              <BreadcrumbLink>AI Tools</BreadcrumbLink>
+            </Link>
           </BreadcrumbItem>
           {paths.map((path, index) => (
             <Fragment key={path}>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
                 {index < paths.length - 1 ? (
-                  <BreadcrumbLink className="a">
-                    {toTitleCase(path)}
-                  </BreadcrumbLink>
+                  <Link href={`/ai-tools/${paths.slice(0, index + 1).join('/')}`} passHref legacyBehavior>
+                    <BreadcrumbLink>{toTitleCase(path)}</BreadcrumbLink>
+                  </Link>
                 ) : (
-                  <BreadcrumbPage className="b">
-                    {toTitleCase(path)}
-                  </BreadcrumbPage>
+                  <BreadcrumbPage>{toTitleCase(path)}</BreadcrumbPage>
                 )}
               </BreadcrumbItem>
             </Fragment>
