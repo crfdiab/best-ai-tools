@@ -49,7 +49,19 @@ export const ROUTES: EachRoute[] = [
     ],
   },
   {
-    title: "AI Tools", href: "/", noLink: undefined,
+    title: "AI Tools",
+    href: "",
+    noLink: undefined,
+    items: [
+     {title: "AI Agent Tools",href:"/ai-agents"},
+     {title: "AI Chatbot Assistant Tools",href:"/ai-chatbot-assistants"},
+     {title: "AI Detection Tools",href:"/ai-detection"},
+     {title: "AI Art Generator", href: "/ai-art-generation"},
+     {title: "AI Code Generation", href: "/ai-code-generation"},
+     {title: "AI Tools For Audio", href: "/audio"},
+     {title: "AI Tools For Automation", href: "/ai-automation"},
+     {title: "AI Tools For Avatar Generation", href: "/ai-avatar-generation"},
+    ],
   },
   {
     title: "Server Actions",
