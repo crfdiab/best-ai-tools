@@ -16,24 +16,11 @@ import { SheetClose } from "@/components/ui/sheet";
 export const NAVLINKS = [
   {
     title: "AI Tools",
-    href: `/ai-tools${page_routes[0].href}`,
+    href: `/ai-tools`,
   },
   {
     title: "Blog",
     href: "/blog",
-  },
-  {
-    title: "Examples",
-    href: "#",
-  },
-  {
-    title: "Guides",
-    href: "#",
-  },
-  {
-    title: "Community",
-    href: "https://github.com/nisabmohd/Aria-Docs/discussions",
-    external: true,
   },
 ];
 
